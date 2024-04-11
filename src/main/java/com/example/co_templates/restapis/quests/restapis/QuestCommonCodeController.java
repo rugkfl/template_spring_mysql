@@ -1,4 +1,4 @@
-package com.example.co_templates.restapis.quests;
+package com.example.co_templates.restapis.quests.restapis;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
-public class CommonCodecController {
+public class QuestCommonCodeController {
     @GetMapping("/q/r/commonCode/list/{pk_id}") 
     public ResponseEntity<Object> commonCodeList(@PathVariable String pk_id) {
     
