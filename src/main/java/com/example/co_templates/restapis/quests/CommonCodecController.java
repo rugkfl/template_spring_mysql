@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
 public class CommonCodecController {
-    @GetMapping("/commonCode/list/{pk_id}") 
+    @GetMapping("/q/r/commonCode/list/{pk_id}") 
     public ResponseEntity<Object> commonCodeList(@PathVariable String pk_id) {
     
         ArrayList arrayList = new ArrayList<>();
@@ -27,7 +27,7 @@ public class CommonCodecController {
   
     }
 
-    @GetMapping("/commonCode/view/{pk_id}/{fk_id}/{name}")
+    @GetMapping("/q/r/commonCode/view/{pk_id}/{fk_id}/{name}")
     public ResponseEntity<Object> commonCodeHashMap (@PathVariable String pk_id, @PathVariable String fk_id, @PathVariable String name) {
         ArrayList arrayList = new ArrayList<>();
         HashMap resultMap = new HashMap<>();

@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RestController
 public class HelloworldController {
     // / /helloWorldResponseList/1/10/1
-    @GetMapping("/helloWorldResponseList/{currentPage}/{perPage}/{SN}")
+    @GetMapping("/r/helloWorldResponseList/{currentPage}/{perPage}/{SN}")
     public ResponseEntity<Object> helloWorldResponseList(@PathVariable String currentPage, @PathVariable String perPage,
             @PathVariable String SN) {
         // "spm_row": 471, "SN": 1, "CMPNM": "로이유통", "RDNMADR": null
@@ -36,7 +36,7 @@ public class HelloworldController {
         return ResponseEntity.ok().body(arrayList); // =json / ok는 200번대 / 
     }
 
-    @GetMapping("/helloWorldResponseWithException/{companyId}")
+    @GetMapping("/r/helloWorldResponseWithException/{companyId}")
     public ResponseEntity<Object> helloWorldResponseWithException(@PathVariable String companyId) {
         try {
             int result = 5 % 0 ;
